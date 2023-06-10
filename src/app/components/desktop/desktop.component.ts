@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {subscribeOn} from "rxjs";
 
 @Component({
   selector: 'app-desktop',
@@ -9,8 +8,8 @@ import {subscribeOn} from "rxjs";
 export class DesktopComponent implements OnInit {
 
   date: Date = new Date();
-  startMenu?: HTMLDivElement;
-  startMenuVisibility: boolean = false;
+  private startMenu?: HTMLDivElement;
+  private startMenuVisibility: boolean = false;
 
   ngOnInit(): void {
     this.utcTime();

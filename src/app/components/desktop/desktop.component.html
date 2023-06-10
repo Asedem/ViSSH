@@ -1,9 +1,9 @@
 <div id="main">
   <div id="navbar">
-    <div class="button" (click)="toggleStartMenu()">
+    <div (click)="toggleStartMenu()" class="button">
       <p class="not-selectable">Start</p>
     </div>
-    <p id="time" class="not-selectable">{{date.getHours()}}:{{date.getMinutes()}}</p>
+    <p class="not-selectable" id="time">{{date.getHours()}}:{{date.getMinutes()}}</p>
   </div>
   <div id="startMenu">
 
