@@ -1,13 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { LoginScreenComponent } from './components/login-screen/login-screen.component';
+import {AppComponent} from './app.component';
+import {LoginScreenComponent} from './components/login-screen/login-screen.component';
+import {DesktopComponent} from './components/desktop/desktop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    DesktopComponent
   ],
   imports: [
     BrowserModule
@@ -15,4 +17,5 @@ import { LoginScreenComponent } from './components/login-screen/login-screen.com
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
